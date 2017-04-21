@@ -12,8 +12,10 @@ def administrar_clientes(socket_cliente):
  
 ip = "0.0.0.0"
 puerto = 39421
-max_conexiones = 5
+max_conexiones = 10
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+ 
  
 servidor.bind((ip, puerto))
 servidor.listen(max_conexiones)
